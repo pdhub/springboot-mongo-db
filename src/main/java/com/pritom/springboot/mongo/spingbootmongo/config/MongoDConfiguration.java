@@ -15,7 +15,7 @@ public class MongoDConfiguration {
     CommandLineRunner commandLineRunner (UserRepository userRepository){
         return args -> {
             userRepository.save(new User(1, "Peter", "Google", 1200L));
-            userRepository.save(new User(1, "Sam", "Facebook", 1800L));
+            userRepository.save(new User(2, "Sam", "Facebook", 1800L));
         };
     }
 }
